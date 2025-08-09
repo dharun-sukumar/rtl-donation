@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Campaigns - Hope Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>Hope Foundation</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home Style 1</a>
+                        <a href="index2.html">Home Style 2</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="campaigns.html" class="nav-link active">Campaigns</a></li>
+                <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Dashboard <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="admin-dashboard.html">Admin Dashboard</a>
+                        <a href="user-dashboard.html">User Dashboard</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button id="rtl-toggle" class="rtl-toggle">
+                        <i class="fas fa-globe"></i> RTL
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Our Active Campaigns</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+        </section>
+
+        <!-- Campaign Filter -->
+        <section class="campaign-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Campaigns</button>
+                    <button class="filter-btn" data-filter="education">Education</button>
+                    <button class="filter-btn" data-filter="water">Clean Water</button>
+                    <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+                    <button class="filter-btn" data-filter="emergency">Emergency Relief</button>
+                    <button class="filter-btn" data-filter="sustainability">Sustainability</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campaigns Grid -->
+        <section class="campaigns-section">
+            <div class="container">
+                <div class="campaigns-grid">
+                    <!-- Education Campaign -->
+                    <div class="campaign-card" data-category="education">
+                        <div class="campaign-image">
+                            <img src="https://images.pexels.com/photos/8923973/pexels-photo-8923973.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Education for All">
+                            <div class="campaign-badge">Education</div>
+                        </div>
+                        <div class="campaign-content">
+                            <h3>Education for All</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="campaign-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Guatemala, Honduras</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>12 months remaining</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <div class="campaign-stats">
+                                <div class="stat">
+                                    <span class="stat-value">$37,500</span>
+                                    <span class="stat-label">Raised</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">75%</span>
+                                    <span class="stat-label">Complete</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">$50,000</span>
+                                    <span class="stat-label">Goal</span>
+                                </div>
+                            </div>
+                            <div class="campaign-actions">
+                                <a href="donate.html" class="btn btn-primary">Donate Now</a>
+                                <button class="btn btn-outline">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Clean Water Campaign -->
+                    <div class="campaign-card" data-category="water">
+                        <div class="campaign-image">
+                            <img src="https://images.pexels.com/photos/6647019/pexels-photo-6647019.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Clean Water Initiative">
+                            <div class="campaign-badge">Clean Water</div>
+                        </div>
+                        <div class="campaign-content">
+                            <h3>Clean Water Initiative</h3>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <div class="campaign-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Uganda, Kenya</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>8 months remaining</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                            <div class="campaign-stats">
+                                <div class="stat">
+                                    <span class="stat-value">$18,000</span>
+                                    <span class="stat-label">Raised</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">60%</span>
+                                    <span class="stat-label">Complete</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">$30,000</span>
+                                    <span class="stat-label">Goal</span>
+                                </div>
+                            </div>
+                            <div class="campaign-actions">
+                                <a href="donate.html" class="btn btn-primary">Donate Now</a>
+                                <button class="btn btn-outline">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Healthcare Campaign -->
+                    <div class="campaign-card" data-category="healthcare">
+                        <div class="campaign-image">
+                            <img src="https://images.pexels.com/photos/6647028/pexels-photo-6647028.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Healthcare Access">
+                            <div class="campaign-badge">Healthcare</div>
+                        </div>
+                        <div class="campaign-content">
+                            <h3>Healthcare Access</h3>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="campaign-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Bangladesh, Nepal</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>15 months remaining</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%"></div>
+                            </div>
+                            <div class="campaign-stats">
+                                <div class="stat">
+                                    <span class="stat-value">$20,000</span>
+                                    <span class="stat-label">Raised</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">40%</span>
+                                    <span class="stat-label">Complete</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">$50,000</span>
+                                    <span class="stat-label">Goal</span>
+                                </div>
+                            </div>
+                            <div class="campaign-actions">
+                                <a href="donate.html" class="btn btn-primary">Donate Now</a>
+                                <button class="btn btn-outline">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Relief Campaign -->
+                    <div class="campaign-card" data-category="emergency">
+                        <div class="campaign-image">
+                            <img src="https://images.pexels.com/photos/6646933/pexels-photo-6646933.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Emergency Relief">
+                            <div class="campaign-badge urgent">Emergency</div>
+                        </div>
+                        <div class="campaign-content">
+                            <h3>Disaster Relief Fund</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <div class="campaign-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Philippines, Indonesia</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Ongoing</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                            <div class="campaign-stats">
+                                <div class="stat">
+                                    <span class="stat-value">$85,000</span>
+                                    <span class="stat-label">Raised</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">85%</span>
+                                    <span class="stat-label">Complete</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">$100,000</span>
+                                    <span class="stat-label">Goal</span>
+                                </div>
+                            </div>
+                            <div class="campaign-actions">
+                                <a href="donate.html" class="btn btn-primary">Donate Now</a>
+                                <button class="btn btn-outline">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sustainability Campaign -->
+                    <div class="campaign-card" data-category="sustainability">
+                        <div class="campaign-image">
+                            <img src="https://images.pexels.com/photos/6647021/pexels-photo-6647021.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Green Future">
+                            <div class="campaign-badge">Sustainability</div>
+                        </div>
+                        <div class="campaign-content">
+                            <h3>Green Future Initiative</h3>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
+                            <div class="campaign-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Peru, Bolivia</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>18 months remaining</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 30%"></div>
+                            </div>
+                            <div class="campaign-stats">
+                                <div class="stat">
+                                    <span class="stat-value">$15,000</span>
+                                    <span class="stat-label">Raised</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">30%</span>
+                                    <span class="stat-label">Complete</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">$50,000</span>
+                                    <span class="stat-label">Goal</span>
+                                </div>
+                            </div>
+                            <div class="campaign-actions">
+                                <a href="donate.html" class="btn btn-primary">Donate Now</a>
+                                <button class="btn btn-outline">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Women Empowerment Campaign -->
+                    <div class="campaign-card" data-category="education">
+                        <div class="campaign-image">
+                            <img src="https://images.pexels.com/photos/6647006/pexels-photo-6647006.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Women Empowerment">
+                            <div class="campaign-badge">Education</div>
+                        </div>
+                        <div class="campaign-content">
+                            <h3>Women Empowerment Program</h3>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti.</p>
+                            <div class="campaign-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>India, Pakistan</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>24 months remaining</span>
+                                </div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                            <div class="campaign-stats">
+                                <div class="stat">
+                                    <span class="stat-value">$22,500</span>
+                                    <span class="stat-label">Raised</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">45%</span>
+                                    <span class="stat-label">Complete</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">$50,000</span>
+                                    <span class="stat-label">Goal</span>
+                                </div>
+                            </div>
+                            <div class="campaign-actions">
+                                <a href="donate.html" class="btn btn-primary">Donate Now</a>
+                                <button class="btn btn-outline">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How Your Donation Helps -->
+        <section class="donation-impact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How Your Donation Makes a Difference</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                </div>
+                
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <div class="impact-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>$25 Impact</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="impact-item">
+                        <div class="impact-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>$50 Impact</h3>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="impact-item">
+                        <div class="impact-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>$100 Impact</h3>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="impact-item">
+                        <div class="impact-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h3>$250 Impact</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Support a Campaign?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="cta-buttons">
+                        <a href="donate.html" class="btn btn-primary btn-large">Make a Donation</a>
+                        <a href="contact.html" class="btn btn-outline btn-large">Start Your Own Campaign</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart"></i>
+                        <span>Hope Foundation</span>
+                    </div>
+                    <p>Making a difference in communities worldwide through sustainable development and humanitarian aid.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="campaigns.html">Our Campaigns</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Get Involved</h3>
+                    <ul>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Corporate Partnership</a></li>
+                        <li><a href="#">Fundraise</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@hopefoundation.org</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Hope Street, City, State 12345</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Hope Foundation. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="rtl-toggle.js"></script>
+    <script>
+        // Campaign filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const campaignCards = document.querySelectorAll('.campaign-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    const filter = btn.getAttribute('data-filter');
+                    
+                    campaignCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

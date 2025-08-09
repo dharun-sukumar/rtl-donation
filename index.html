@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Foundation - Making a Difference Together</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>Hope Foundation</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home Style 1</a>
+                        <a href="index2.html">Home Style 2</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="campaigns.html" class="nav-link">Campaigns</a></li>
+                <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Dashboard <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="admin-dashboard.html">Admin Dashboard</a>
+                        <a href="user-dashboard.html">User Dashboard</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button id="rtl-toggle" class="rtl-toggle">
+                        <i class="fas fa-globe"></i> RTL
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+                <div class="hero-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-heart"></i>
+                        <span>Making a Difference Since 2000</span>
+                    </div>
+                    <h1>
+                        <span class="hero-highlight">Together</span> We Can 
+                        <span class="hero-gradient-text">Change Lives</span>
+                    </h1>
+                    <p>Join thousands of compassionate individuals in creating lasting impact across communities worldwide. Every donation, no matter the size, transforms lives and builds a better tomorrow.</p>
+                    <div class="hero-stats-mini">
+                        <div class="mini-stat">
+                            <strong>50K+</strong>
+                            <span>Lives Changed</span>
+                        </div>
+                        <div class="mini-stat">
+                            <strong>85</strong>
+                            <span>Countries</span>
+                        </div>
+                        <div class="mini-stat">
+                            <strong>25</strong>
+                            <span>Years</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="donate.html" class="btn btn-primary btn-hero">
+                            <i class="fas fa-heart"></i>
+                            Donate Now
+                        </a>
+                        <a href="campaigns.html" class="btn btn-outline btn-hero">
+                            <i class="fas fa-play-circle"></i>
+                            View Campaigns
+                        </a>
+                    </div>
+                    <div class="hero-trust-indicators">
+                        <p class="trust-text">Trusted by 100,000+ donors worldwide</p>
+                        <div class="trust-badges">
+                            <span class="trust-badge">
+                                <i class="fas fa-shield-alt"></i>
+                                Secure
+                            </span>
+                            <span class="trust-badge">
+                                <i class="fas fa-certificate"></i>
+                                Verified
+                            </span>
+                            <span class="trust-badge">
+                                <i class="fas fa-chart-line"></i>
+                                Transparent
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <img src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Helping hands" class="hero-main-image">
+                        <div class="hero-floating-card card-1">
+                            <div class="floating-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="floating-content">
+                                <h4>Education</h4>
+                                <p>1,200+ students supported</p>
+                            </div>
+                        </div>
+                        <div class="hero-floating-card card-2">
+                            <div class="floating-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <div class="floating-content">
+                                <h4>Clean Water</h4>
+                                <p>500+ wells built</p>
+                            </div>
+                        </div>
+                        <div class="hero-floating-card card-3">
+                            <div class="floating-icon">
+                                <i class="fas fa-medkit"></i>
+                            </div>
+                            <div class="floating-content">
+                                <h4>Healthcare</h4>
+                                <p>50+ mobile clinics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Stats -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50000">0</div>
+                        <div class="stat-label">Lives Changed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="1200">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="85">0</div>
+                        <div class="stat-label">Countries Reached</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="25">0</div>
+                        <div class="stat-label">Years of Service</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Campaigns -->
+        <section class="featured-campaigns">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Campaigns</h2>
+                    <p>Support our active campaigns and make a direct impact</p>
+                </div>
+                
+                <div class="campaigns-grid">
+                    <div class="campaign-card">
+                        <div class="campaign-image">
+                            <img src="https://images.pexels.com/photos/8923973/pexels-photo-8923973.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Education Campaign">
+                        </div>
+                        <div class="campaign-content">
+                            <h3>Education for All</h3>
+                            <p>Providing quality education to underprivileged children in rural communities.</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <div class="campaign-stats">
+                                <span>$37,500 raised of $50,000</span>
+                                <span>75%</span>
+                            </div>
+                            <a href="donate.html" class="btn btn-primary">Donate Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="campaign-card">
+                        <div class="campaign-image">
+                            <img src="https://images.pexels.com/photos/6647019/pexels-photo-6647019.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Clean Water Campaign">
+                        </div>
+                        <div class="campaign-content">
+                            <h3>Clean Water Initiative</h3>
+                            <p>Building wells and water purification systems in water-scarce regions.</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                            <div class="campaign-stats">
+                                <span>$18,000 raised of $30,000</span>
+                                <span>60%</span>
+                            </div>
+                            <a href="donate.html" class="btn btn-primary">Donate Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="campaign-card">
+                        <div class="campaign-image">
+                            <img src="https://images.pexels.com/photos/6647028/pexels-photo-6647028.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Healthcare Campaign">
+                        </div>
+                        <div class="campaign-content">
+                            <h3>Healthcare Access</h3>
+                            <p>Mobile medical units bringing healthcare to remote villages.</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%"></div>
+                            </div>
+                            <div class="campaign-stats">
+                                <span>$20,000 raised of $50,000</span>
+                                <span>40%</span>
+                            </div>
+                            <a href="donate.html" class="btn btn-primary">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Our Mission</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.pexels.com/photos/6647023/pexels-photo-6647023.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Our team">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Make a Difference?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <div class="cta-buttons">
+                        <a href="donate.html" class="btn btn-primary btn-large">Start Donating</a>
+                        <a href="campaigns.html" class="btn btn-outline btn-large">View All Campaigns</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How We Work -->
+        <section class="how-we-work">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How We Create Impact</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Identify Needs</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Partner Locally</h3>
+                        <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Implement Solutions</h3>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <div class="step-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Measure Impact</h3>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What People Say About Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/3184436/pexels-photo-3184436.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Maria Santos">
+                            <div class="author-info">
+                                <h4>Maria Santos</h4>
+                                <span>Community Leader, Guatemala</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/3183191/pexels-photo-3183191.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Dr. James Wilson">
+                            <div class="author-info">
+                                <h4>Dr. James Wilson</h4>
+                                <span>Medical Volunteer, Kenya</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Sarah Johnson">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>Monthly Donor, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-signup">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2>Stay Connected</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="newsletter-form">
+                        <form class="signup-form">
+                            <div class="form-group">
+                                <input type="email" placeholder="Enter your email address" required>
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </div>
+                            <p class="form-note">Sed do eiusmod tempor incididunt ut labore. We respect your privacy.</p>
+                            <p class="form-note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart"></i>
+                        <span>Hope Foundation</span>
+                    </div>
+                    <p>Making a difference in communities worldwide through sustainable development and humanitarian aid.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="campaigns.html">Our Campaigns</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Get Involved</h3>
+                    <ul>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Corporate Partnership</a></li>
+                        <li><a href="#">Fundraise</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@hopefoundation.org</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Hope Street, City, State 12345</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Hope Foundation. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="rtl-toggle.js"></script>
+</body>
+</html>

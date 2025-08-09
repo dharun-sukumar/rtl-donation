@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hope Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>Hope Foundation</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home Style 1</a>
+                        <a href="index2.html">Home Style 2</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="campaigns.html" class="nav-link">Campaigns</a></li>
+                <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link active">Dashboard <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="admin-dashboard.html">Admin Dashboard</a>
+                        <a href="user-dashboard.html">User Dashboard</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button id="rtl-toggle" class="rtl-toggle">
+                        <i class="fas fa-globe"></i> RTL
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="auth-main">
+        <!-- Background Elements -->
+        <div class="auth-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
+
+        <div class="auth-container-wrapper">
+            <div class="auth-container-modern">
+                <!-- Left Side - Branding -->
+                <div class="auth-branding">
+                    <div class="branding-content">
+                        <div class="brand-logo">
+                            <i class="fas fa-heart"></i>
+                            <h2>Hope Foundation</h2>
+                        </div>
+                        <h1>Welcome Back</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        
+                        <div class="feature-highlights">
+                            <div class="feature-item">
+                                <i class="fas fa-chart-line"></i>
+                                <div>
+                                    <h4>Track Your Impact</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h4>Secure & Private</h4>
+                                    <p>Sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <h4>Join Community</h4>
+                                    <p>Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://images.pexels.com/photos/3184436/pexels-photo-3184436.jpeg?auto=compress&cs=tinysrgb&w=100" alt="User">
+                                <div>
+                                    <h5>Sarah Johnson</h5>
+                                    <span>Community Leader</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Forms -->
+                <div class="auth-forms">
+                    <div class="form-container">
+                        <!-- Tab Navigation -->
+                        <div class="auth-tabs-modern">
+                            <button class="auth-tab-modern active" data-tab="login">
+                                <i class="fas fa-sign-in-alt"></i>
+                                Sign In
+                            </button>
+                            <button class="auth-tab-modern" data-tab="register">
+                                <i class="fas fa-user-plus"></i>
+                                Create Account
+                            </button>
+                        </div>
+
+                        <!-- Login Form -->
+                        <div class="auth-form-modern" id="loginTab">
+                            <div class="form-header-modern">
+                                <h3>Sign In to Your Account</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                            </div>
+
+                            <form class="modern-form" id="loginForm">
+                                <div class="input-group-modern">
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-envelope input-icon"></i>
+                                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                        <label for="email">Email Address</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="input-group-modern">
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-lock input-icon"></i>
+                                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                                        <label for="password">Password</label>
+                                        <button type="button" class="password-toggle">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-options-modern">
+                                    <label class="checkbox-modern">
+                                        <input type="checkbox" name="remember">
+                                        <span class="checkmark"></span>
+                                        Remember me
+                                    </label>
+                                    <a href="#" class="forgot-link">Forgot Password?</a>
+                                </div>
+                                
+                                <button type="submit" class="btn-modern btn-primary-modern">
+                                    <span>Sign In</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </form>
+
+                            <div class="divider-modern">
+                                <span>or continue with</span>
+                            </div>
+
+                            <div class="social-login-modern">
+                                <button class="social-btn-modern google">
+                                    <i class="fab fa-google"></i>
+                                    Google
+                                </button>
+                                <button class="social-btn-modern facebook">
+                                    <i class="fab fa-facebook"></i>
+                                    Facebook
+                                </button>
+                                <button class="social-btn-modern apple">
+                                    <i class="fab fa-apple"></i>
+                                    Apple
+                                </button>
+                            </div>
+
+                            <div class="demo-info">
+                                <div class="demo-header">
+                                    <i class="fas fa-info-circle"></i>
+                                    Demo Accounts
+                                </div>
+                                <div class="demo-accounts-modern">
+                                    <div class="demo-account">
+                                        <strong>Admin:</strong> admin@hopefoundation.org
+                                    </div>
+                                    <div class="demo-account">
+                                        <strong>User:</strong> Any other email
+                                    </div>
+                                    <div class="demo-account">
+                                        <strong>Password:</strong> Any password
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Register Form -->
+                        <div class="auth-form-modern" id="registerTab" style="display: none;">
+                            <div class="form-header-modern">
+                                <h3>Create Your Account</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                            </div>
+
+                            <form class="modern-form" id="registerForm">
+                                <div class="input-row-modern">
+                                    <div class="input-group-modern">
+                                        <div class="input-wrapper">
+                                            <i class="fas fa-user input-icon"></i>
+                                            <input type="text" id="regFirstName" name="firstName" placeholder="First name" required>
+                                            <label for="regFirstName">First Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group-modern">
+                                        <div class="input-wrapper">
+                                            <i class="fas fa-user input-icon"></i>
+                                            <input type="text" id="regLastName" name="lastName" placeholder="Last name" required>
+                                            <label for="regLastName">Last Name</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="input-group-modern">
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-envelope input-icon"></i>
+                                        <input type="email" id="regEmail" name="email" placeholder="Enter your email" required>
+                                        <label for="regEmail">Email Address</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="input-group-modern">
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-phone input-icon"></i>
+                                        <input type="tel" id="regPhone" name="phone" placeholder="Phone number (optional)">
+                                        <label for="regPhone">Phone Number</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="input-group-modern">
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-lock input-icon"></i>
+                                        <input type="password" id="regPassword" name="password" placeholder="Create password" required>
+                                        <label for="regPassword">Password</label>
+                                        <button type="button" class="password-toggle">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                    <div class="password-strength">
+                                        <div class="strength-bar">
+                                            <div class="strength-fill"></div>
+                                        </div>
+                                        <span class="strength-text">Password strength</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="input-group-modern">
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-lock input-icon"></i>
+                                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required>
+                                        <label for="confirmPassword">Confirm Password</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="input-group-modern">
+                                    <div class="select-wrapper">
+                                        <i class="fas fa-heart input-icon"></i>
+                                        <select id="userType" name="userType" required>
+                                            <option value="">Select your interest</option>
+                                            <option value="donate">Make donations</option>
+                                            <option value="volunteer">Volunteer time</option>
+                                            <option value="both">Both donate and volunteer</option>
+                                            <option value="corporate">Corporate partnership</option>
+                                        </select>
+                                        <label for="userType">Primary Interest</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="checkbox-group-modern">
+                                    <label class="checkbox-modern">
+                                        <input type="checkbox" name="terms" required>
+                                        <span class="checkmark"></span>
+                                        I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                                    </label>
+                                    
+                                    <label class="checkbox-modern">
+                                        <input type="checkbox" name="newsletter" checked>
+                                        <span class="checkmark"></span>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    </label>
+                                    
+                                    <label class="checkbox-modern">
+                                        <input type="checkbox" name="sms">
+                                        <span class="checkmark"></span>
+                                        Sed do eiusmod tempor incididunt ut labore et dolore
+                                    </label>
+                                </div>
+                                
+                                <button type="submit" class="btn-modern btn-primary-modern">
+                                    <span>Create Account</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </form>
+
+                            <div class="divider-modern">
+                                <span>or sign up with</span>
+                            </div>
+
+                            <div class="social-login-modern">
+                                <button class="social-btn-modern google">
+                                    <i class="fab fa-google"></i>
+                                    Google
+                                </button>
+                                <button class="social-btn-modern facebook">
+                                    <i class="fab fa-facebook"></i>
+                                    Facebook
+                                </button>
+                                <button class="social-btn-modern apple">
+                                    <i class="fab fa-apple"></i>
+                                    Apple
+                                </button>
+                            </div>
+
+                            <div class="benefits-preview">
+                                <h4>Why Join Us?</h4>
+                                <div class="benefits-list-modern">
+                                    <div class="benefit-item-modern">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                    </div>
+                                    <div class="benefit-item-modern">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Sed do eiusmod tempor incididunt ut labore</span>
+                                    </div>
+                                    <div class="benefit-item-modern">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Ut enim ad minim veniam, quis nostrud</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart"></i>
+                        <span>Hope Foundation</span>
+                    </div>
+                    <p>Making a difference in communities worldwide through sustainable development and humanitarian aid.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="campaigns.html">Our Campaigns</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Get Involved</h3>
+                    <ul>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Corporate Partnership</a></li>
+                        <li><a href="#">Fundraise</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@hopefoundation.org</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Hope Street, City, State 12345</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Hope Foundation. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="rtl-toggle.js"></script>
+    <script>
+        // Modern login page functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab switching
+            const authTabs = document.querySelectorAll('.auth-tab-modern');
+            const loginTab = document.getElementById('loginTab');
+            const registerTab = document.getElementById('registerTab');
+            
+            authTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    authTabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    
+                    if (tab.getAttribute('data-tab') === 'login') {
+                        loginTab.style.display = 'block';
+                        registerTab.style.display = 'none';
+                    } else {
+                        loginTab.style.display = 'none';
+                        registerTab.style.display = 'block';
+                    }
+                });
+            });
+
+            // Password toggle functionality
+            const passwordToggles = document.querySelectorAll('.password-toggle');
+            passwordToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const input = this.previousElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    if (input.type === 'password') {
+                        input.type = 'text';
+                        icon.classList.remove('fa-eye');
+                        icon.classList.add('fa-eye-slash');
+                    } else {
+                        input.type = 'password';
+                        icon.classList.remove('fa-eye-slash');
+                        icon.classList.add('fa-eye');
+                    }
+                });
+            });
+
+            // Password strength indicator
+            const passwordInput = document.getElementById('regPassword');
+            if (passwordInput) {
+                passwordInput.addEventListener('input', function() {
+                    const password = this.value;
+                    const strengthBar = document.querySelector('.strength-fill');
+                    const strengthText = document.querySelector('.strength-text');
+                    
+                    let strength = 0;
+                    let strengthLabel = 'Weak';
+                    
+                    if (password.length >= 8) strength += 25;
+                    if (/[a-z]/.test(password)) strength += 25;
+                    if (/[A-Z]/.test(password)) strength += 25;
+                    if (/[0-9]/.test(password)) strength += 25;
+                    
+                    if (strength >= 75) strengthLabel = 'Strong';
+                    else if (strength >= 50) strengthLabel = 'Medium';
+                    else if (strength >= 25) strengthLabel = 'Fair';
+                    
+                    strengthBar.style.width = strength + '%';
+                    strengthText.textContent = strengthLabel;
+                    
+                    strengthBar.className = 'strength-fill';
+                    if (strength >= 75) strengthBar.classList.add('strong');
+                    else if (strength >= 50) strengthBar.classList.add('medium');
+                    else if (strength >= 25) strengthBar.classList.add('fair');
+                });
+            }
+
+            // Floating input labels
+            const inputs = document.querySelectorAll('.input-wrapper input, .select-wrapper select');
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentElement.classList.add('focused');
+                });
+                
+                input.addEventListener('blur', function() {
+                    if (!this.value) {
+                        this.parentElement.classList.remove('focused');
+                    }
+                });
+                
+                // Check if input has value on load
+                if (input.value) {
+                    input.parentElement.classList.add('focused');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

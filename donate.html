@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Hope Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>Hope Foundation</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home Style 1</a>
+                        <a href="index2.html">Home Style 2</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="campaigns.html" class="nav-link">Campaigns</a></li>
+                <li class="nav-item"><a href="donate.html" class="nav-link active">Donate</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Dashboard <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="admin-dashboard.html">Admin Dashboard</a>
+                        <a href="user-dashboard.html">User Dashboard</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button id="rtl-toggle" class="rtl-toggle">
+                        <i class="fas fa-globe"></i> RTL
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Make a Donation</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+        </section>
+
+        <!-- Donation Form Section -->
+        <section class="donation-section">
+            <div class="container">
+                <div class="donation-grid">
+                    <!-- Donation Form -->
+                    <div class="donation-form-container">
+                        <div class="form-header">
+                            <h2>Choose Your Donation Amount</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+
+                        <form class="donation-form" id="donationForm">
+                            <!-- Amount Selection -->
+                            <div class="amount-section">
+                                <div class="preset-amounts">
+                                    <button type="button" class="amount-btn" data-amount="25">$25</button>
+                                    <button type="button" class="amount-btn" data-amount="50">$50</button>
+                                    <button type="button" class="amount-btn" data-amount="100">$100</button>
+                                    <button type="button" class="amount-btn" data-amount="250">$250</button>
+                                    <button type="button" class="amount-btn" data-amount="500">$500</button>
+                                    <button type="button" class="amount-btn" data-amount="1000">$1000</button>
+                                </div>
+                                
+                                <div class="custom-amount">
+                                    <label for="customAmount">Or enter custom amount:</label>
+                                    <div class="amount-input">
+                                        <span class="currency-symbol">$</span>
+                                        <input type="number" id="customAmount" name="customAmount" placeholder="0.00" min="5" step="0.01">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Donation Type -->
+                            <div class="donation-type">
+                                <h3>Donation Type</h3>
+                                <div class="type-options">
+                                    <label class="radio-option">
+                                        <input type="radio" name="donationType" value="one-time" checked>
+                                        <span class="radio-custom"></span>
+                                        <div class="option-content">
+                                            <strong>One-time Donation</strong>
+                                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                        </div>
+                                    </label>
+                                    
+                                    <label class="radio-option">
+                                        <input type="radio" name="donationType" value="monthly">
+                                        <span class="radio-custom"></span>
+                                        <div class="option-content">
+                                            <strong>Monthly Donation</strong>
+                                            <p>Sed do eiusmod tempor incididunt ut labore</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Campaign Selection -->
+                            <div class="campaign-selection">
+                                <h3>Support a Specific Campaign (Optional)</h3>
+                                <select name="campaign" id="campaign">
+                                    <option value="">General Fund</option>
+                                    <option value="education">Education for All</option>
+                                    <option value="water">Clean Water Initiative</option>
+                                    <option value="healthcare">Healthcare Access</option>
+                                    <option value="emergency">Emergency Relief</option>
+                                </select>
+                            </div>
+
+                            <!-- Personal Information -->
+                            <div class="personal-info">
+                                <h3>Your Information</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name *</label>
+                                        <input type="text" id="firstName" name="firstName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name *</label>
+                                        <input type="text" id="lastName" name="lastName" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+
+                            <!-- Payment Information -->
+                            <div class="payment-info">
+                                <h3>Payment Information</h3>
+                                <div class="payment-methods">
+                                    <label class="payment-method active">
+                                        <input type="radio" name="paymentMethod" value="card" checked>
+                                        <i class="fas fa-credit-card"></i>
+                                        Credit/Debit Card
+                                    </label>
+                                    <label class="payment-method">
+                                        <input type="radio" name="paymentMethod" value="paypal">
+                                        <i class="fab fa-paypal"></i>
+                                        PayPal
+                                    </label>
+                                </div>
+
+                                <div class="card-info" id="cardInfo">
+                                    <div class="form-group">
+                                        <label for="cardNumber">Card Number *</label>
+                                        <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="expiryDate">Expiry Date *</label>
+                                            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cvv">CVV *</label>
+                                            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Additional Options -->
+                            <div class="additional-options">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="anonymous" value="1">
+                                    <span class="checkbox-custom"></span>
+                                    Make this donation anonymous
+                                </label>
+                                
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="newsletter" value="1" checked>
+                                    <span class="checkbox-custom"></span>
+                                    Subscribe to our newsletter for updates
+                                </label>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary btn-large donate-btn">
+                                <i class="fas fa-heart"></i>
+                                Complete Donation
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Donation Impact Sidebar -->
+                    <div class="donation-impact">
+                        <div class="impact-card">
+                            <h3>Your Impact</h3>
+                            <div class="impact-examples">
+                                <div class="impact-item">
+                                    <div class="impact-amount">$25</div>
+                                    <div class="impact-description">
+                                        <h4>School Supplies</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="impact-item">
+                                    <div class="impact-amount">$50</div>
+                                    <div class="impact-description">
+                                        <h4>Clean Water</h4>
+                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="impact-item">
+                                    <div class="impact-amount">$100</div>
+                                    <div class="impact-description">
+                                        <h4>Medical Care</h4>
+                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="impact-item">
+                                    <div class="impact-amount">$250</div>
+                                    <div class="impact-description">
+                                        <h4>Emergency Relief</h4>
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="security-info">
+                            <h3>Safe & Secure</h3>
+                            <div class="security-features">
+                                <div class="security-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>256-bit SSL encryption</span>
+                                </div>
+                                <div class="security-item">
+                                    <i class="fas fa-lock"></i>
+                                    <span>PCI DSS compliant</span>
+                                </div>
+                                <div class="security-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>100% secure transactions</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tax-info">
+                            <h3>Tax Deductible</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                            <p><strong>Tax ID:</strong> 12-3456789</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Ways to Give -->
+        <section class="other-ways">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Other Ways to Support Our Mission</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                </div>
+                
+                <div class="ways-grid">
+                    <div class="way-card">
+                        <div class="way-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Volunteer</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                        <a href="contact.html" class="btn btn-outline">Get Involved</a>
+                    </div>
+                    
+                    <div class="way-card">
+                        <div class="way-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Corporate Partnership</h3>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <a href="contact.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                    
+                    <div class="way-card">
+                        <div class="way-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Fundraising Events</h3>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="contact.html" class="btn btn-outline">Start Fundraising</a>
+                    </div>
+                    
+                    <div class="way-card">
+                        <div class="way-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>Spread the Word</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <a href="#" class="btn btn-outline">Share Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart"></i>
+                        <span>Hope Foundation</span>
+                    </div>
+                    <p>Making a difference in communities worldwide through sustainable development and humanitarian aid.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="campaigns.html">Our Campaigns</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Get Involved</h3>
+                    <ul>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Corporate Partnership</a></li>
+                        <li><a href="#">Fundraise</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@hopefoundation.org</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Hope Street, City, State 12345</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Hope Foundation. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="rtl-toggle.js"></script>
+</body>
+</html>

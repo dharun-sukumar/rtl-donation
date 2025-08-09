@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope Foundation - Building Better Communities</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>Hope Foundation</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home Style 1</a>
+                        <a href="index2.html">Home Style 2</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="campaigns.html" class="nav-link">Campaigns</a></li>
+                <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Dashboard <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="admin-dashboard.html">Admin Dashboard</a>
+                        <a href="user-dashboard.html">User Dashboard</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button id="rtl-toggle" class="rtl-toggle">
+                        <i class="fas fa-globe"></i> RTL
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section - Alternative Style -->
+        <section class="hero hero-alt">
+            <div class="hero-slider">
+                <div class="slide active">
+                    <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/6646864/pexels-photo-6646864.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+                    <div class="slide-content">
+                        <h1>Empowering Communities Worldwide</h1>
+                        <p>Through education, healthcare, and sustainable development programs</p>
+                        <a href="campaigns.html" class="btn btn-primary">Explore Programs</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/6647165/pexels-photo-6647165.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+                    <div class="slide-content">
+                        <h1>Clean Water for Everyone</h1>
+                        <p>Building sustainable water solutions in communities that need them most</p>
+                        <a href="donate.html" class="btn btn-primary">Support Water Projects</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/8923966/pexels-photo-8923966.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+                    <div class="slide-content">
+                        <h1>Education Changes Everything</h1>
+                        <p>Providing quality education opportunities to break the cycle of poverty</p>
+                        <a href="campaigns.html" class="btn btn-primary">Support Education</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="slider-btn active" data-slide="0"></button>
+                <button class="slider-btn" data-slide="1"></button>
+                <button class="slider-btn" data-slide="2"></button>
+            </div>
+        </section>
+
+        <!-- Mission Cards -->
+        <section class="mission-cards">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Focus Areas</h2>
+                    <p>We concentrate our efforts on key areas that create lasting impact</p>
+                </div>
+                
+                <div class="cards-grid">
+                    <div class="mission-card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education</h3>
+                        <p>Building schools, training teachers, and providing educational resources to underserved communities.</p>
+                        <a href="campaigns.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="card-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3>Clean Water</h3>
+                        <p>Installing water wells, purification systems, and sanitation facilities in water-scarce regions.</p>
+                        <a href="campaigns.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="card-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Healthcare</h3>
+                        <p>Mobile clinics, medical training, and health education programs for remote communities.</p>
+                        <a href="campaigns.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="card-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Sustainability</h3>
+                        <p>Environmental conservation and sustainable development projects for long-term impact.</p>
+                        <a href="campaigns.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="success-stories">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Success Stories</h2>
+                    <p>Real stories from the communities we serve</p>
+                </div>
+                
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <div class="story-image">
+                            <img src="https://images.pexels.com/photos/8923994/pexels-photo-8923994.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Maria's Story">
+                        </div>
+                        <div class="story-content">
+                            <h3>Maria's Education Journey</h3>
+                            <p>"Thanks to Hope Foundation's scholarship program, I was able to complete my nursing degree and now serve my community as a healthcare provider."</p>
+                            <div class="story-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Guatemala
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card">
+                        <div class="story-image">
+                            <img src="https://images.pexels.com/photos/6647180/pexels-photo-6647180.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Village Water Project">
+                        </div>
+                        <div class="story-content">
+                            <h3>Clean Water for Kilembe Village</h3>
+                            <p>"Our village now has access to clean water thanks to the new well. Children no longer miss school to fetch water from distant sources."</p>
+                            <div class="story-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Uganda
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card">
+                        <div class="story-image">
+                            <img src="https://images.pexels.com/photos/6647020/pexels-photo-6647020.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Mobile Clinic">
+                        </div>
+                        <div class="story-content">
+                            <h3>Mobile Healthcare Reaches Remote Areas</h3>
+                            <p>"The mobile clinic visits our village monthly, providing essential healthcare services to families who couldn't access medical care before."</p>
+                            <div class="story-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Bangladesh
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Call to Action -->
+        <section class="donation-cta">
+            <div class="container">
+                <div class="cta-grid">
+                    <div class="cta-content">
+                        <h2>Your Support Makes All the Difference</h2>
+                        <p>Every donation, no matter the size, helps us continue our mission of creating positive change in communities around the world.</p>
+                        <div class="donation-options">
+                            <div class="donation-option">
+                                <span class="amount">$25</span>
+                                <span class="impact">Provides school supplies for one child</span>
+                            </div>
+                            <div class="donation-option">
+                                <span class="amount">$50</span>
+                                <span class="impact">Funds one month of clean water for a family</span>
+                            </div>
+                            <div class="donation-option">
+                                <span class="amount">$100</span>
+                                <span class="impact">Supports basic healthcare for 10 people</span>
+                            </div>
+                        </div>
+                        <a href="donate.html" class="btn btn-primary btn-large">Make a Donation</a>
+                    </div>
+                    <div class="cta-visual">
+                        <div class="donation-counter">
+                            <div class="counter-item">
+                                <div class="counter-number" data-count="2547">0</div>
+                                <div class="counter-label">Donors This Month</div>
+                            </div>
+                            <div class="counter-item">
+                                <div class="counter-number" data-count="145680">0</div>
+                                <div class="counter-label">Total Amount Raised</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart"></i>
+                        <span>Hope Foundation</span>
+                    </div>
+                    <p>Making a difference in communities worldwide through sustainable development and humanitarian aid.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="campaigns.html">Our Campaigns</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Get Involved</h3>
+                    <ul>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Corporate Partnership</a></li>
+                        <li><a href="#">Fundraise</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@hopefoundation.org</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Hope Street, City, State 12345</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Hope Foundation. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="rtl-toggle.js"></script>
+</body>
+</html>

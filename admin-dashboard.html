@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Hope Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>Hope Foundation</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home Style 1</a>
+                        <a href="index2.html">Home Style 2</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="campaigns.html" class="nav-link">Campaigns</a></li>
+                <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link active">Dashboard <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="admin-dashboard.html">Admin Dashboard</a>
+                        <a href="user-dashboard.html">User Dashboard</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button id="rtl-toggle" class="rtl-toggle">
+                        <i class="fas fa-globe"></i> RTL
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard admin-dashboard">
+        <div class="container">
+            <!-- Dashboard Header -->
+            <div class="dashboard-header">
+                <div class="dashboard-title">
+                    <h1>Admin Dashboard</h1>
+                    <p>Welcome back, Administrator. Here's your organization overview.</p>
+                </div>
+                <div class="dashboard-actions">
+                    <a href="campaigns.html" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> New Campaign
+                    </a>
+                    <a href="#" class="btn btn-outline">
+                        <i class="fas fa-download"></i> Export Report
+                    </a>
+                    <a href="login.html" class="btn btn-outline">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <a href="#" class="quick-action">
+                    <i class="fas fa-users"></i>
+                    <h4>Manage Users</h4>
+                </a>
+                <a href="#" class="quick-action">
+                    <i class="fas fa-bullhorn"></i>
+                    <h4>Create Campaign</h4>
+                </a>
+                <a href="#" class="quick-action">
+                    <i class="fas fa-chart-bar"></i>
+                    <h4>View Reports</h4>
+                </a>
+                <a href="#" class="quick-action">
+                    <i class="fas fa-cog"></i>
+                    <h4>Settings</h4>
+                </a>
+                <a href="#" class="quick-action">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Messages</h4>
+                </a>
+                <a href="#" class="quick-action">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Security</h4>
+                </a>
+            </div>
+
+            <!-- Dashboard Grid -->
+            <div class="dashboard-grid">
+                <!-- Overview Stats -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Organization Overview</h3>
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="stat-row">
+                            <span class="stat-label">Total Donations</span>
+                            <span class="stat-value">$2,847,392</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Active Campaigns</span>
+                            <span class="stat-value">12</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Total Donors</span>
+                            <span class="stat-value">15,847</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Countries Served</span>
+                            <span class="stat-value">85</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Active Volunteers</span>
+                            <span class="stat-value">2,341</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monthly Performance -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Monthly Performance</h3>
+                        <div class="card-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="chart-placeholder">
+                            <div style="text-align: center;">
+                                <i class="fas fa-chart-bar" style="font-size: 3rem; margin-bottom: 1rem; display: block;"></i>
+                                <strong>Monthly Donations Chart</strong>
+                                <p style="margin: 0.5rem 0 0; font-size: 0.9rem; opacity: 0.8;">Interactive chart showing donation trends</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Campaign Performance -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Top Campaigns</h3>
+                        <div class="card-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="stat-row">
+                            <span class="stat-label">Education for All</span>
+                            <span class="stat-value">$37,500 (75%)</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Clean Water Initiative</span>
+                            <span class="stat-value">$18,000 (60%)</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Healthcare Access</span>
+                            <span class="stat-value">$20,000 (40%)</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Emergency Relief</span>
+                            <span class="stat-value">$85,000 (85%)</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Green Future</span>
+                            <span class="stat-value">$15,000 (30%)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Management -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>User Statistics</h3>
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="stat-row">
+                            <span class="stat-label">Total Users</span>
+                            <span class="stat-value">18,492</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">New This Month</span>
+                            <span class="stat-value">1,247</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Active Donors</span>
+                            <span class="stat-value">15,847</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Volunteers</span>
+                            <span class="stat-value">2,341</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Staff Members</span>
+                            <span class="stat-value">304</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Financial Overview -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Financial Overview</h3>
+                        <div class="card-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="chart-placeholder">
+                            <div style="text-align: center;">
+                                <i class="fas fa-chart-pie" style="font-size: 3rem; margin-bottom: 1rem; display: block;"></i>
+                                <strong>Fund Allocation</strong>
+                                <p style="margin: 0.5rem 0 0; font-size: 0.9rem; opacity: 0.8;">85% Programs | 10% Admin | 5% Fundraising</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System Status -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>System Status</h3>
+                        <div class="card-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="stat-row">
+                            <span class="stat-label">Website Status</span>
+                            <span class="stat-value" style="color: var(--success-color);">Online</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Payment Gateway</span>
+                            <span class="stat-value" style="color: var(--success-color);">Active</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Email Service</span>
+                            <span class="stat-value" style="color: var(--success-color);">Running</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Database</span>
+                            <span class="stat-value" style="color: var(--success-color);">Healthy</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Last Backup</span>
+                            <span class="stat-value">2 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="recent-activity">
+                <div class="activity-header">
+                    <h3>Recent Administrative Activity</h3>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>New Campaign Created</h4>
+                            <p>Women Empowerment Program launched in India and Pakistan</p>
+                        </div>
+                        <div class="activity-time">2 hours ago</div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>New Staff Member Added</h4>
+                            <p>Dr. Sarah Wilson joined as Regional Medical Director</p>
+                        </div>
+                        <div class="activity-time">5 hours ago</div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Monthly Report Generated</h4>
+                            <p>December 2024 impact report is now available</p>
+                        </div>
+                        <div class="activity-time">1 day ago</div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>New Partnership Established</h4>
+                            <p>Collaboration agreement signed with Global Health Alliance</p>
+                        </div>
+                        <div class="activity-time">2 days ago</div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>System Update Completed</h4>
+                            <p>Security patches and performance improvements applied</p>
+                        </div>
+                        <div class="activity-time">3 days ago</div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Campaign Milestone Reached</h4>
+                            <p>Emergency Relief Fund reached 85% of target goal</p>
+                        </div>
+                        <div class="activity-time">4 days ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart"></i>
+                        <span>Hope Foundation</span>
+                    </div>
+                    <p>Making a difference in communities worldwide through sustainable development and humanitarian aid.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="campaigns.html">Our Campaigns</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Get Involved</h3>
+                    <ul>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Corporate Partnership</a></li>
+                        <li><a href="#">Fundraise</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> admin@hopefoundation.org</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Hope Street, City, State 12345</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Hope Foundation. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="rtl-toggle.js"></script>
+</body>
+</html>
