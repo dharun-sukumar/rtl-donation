@@ -66,9 +66,9 @@ body {
   text-align: right;
 }
 
-[dir="rtl"] .nav-menu {
+/* [dir="rtl"] .nav-menu {
   flex-direction: column;
-}
+} */
 
 [dir="rtl"] .hero-content {
   flex-direction: row-reverse;
