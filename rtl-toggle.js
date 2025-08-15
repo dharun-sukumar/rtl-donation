@@ -1,6 +1,6 @@
 // RTL Toggle Functionality
 document.addEventListener('DOMContentLoaded', function() {
-    const rtlToggle = document.getElementById('rtl-toggle');
+    const rtlToggles = document.querySelectorAll('.rtl-toggle');
     const html = document.documentElement;
     
     // Check for saved RTL preference
@@ -9,40 +9,40 @@ document.addEventListener('DOMContentLoaded', function() {
     // Apply saved preference
     if (isRTL) {
         html.setAttribute('dir', 'rtl');
-        updateToggleButton(true);
+        rtlToggles.forEach(btn => updateToggleButton(btn, true));
     }
     
-    // RTL toggle event listener
-    if (rtlToggle) {
-        rtlToggle.addEventListener('click', function() {
+    // RTL toggle event listeners for all buttons
+    rtlToggles.forEach(btn => {
+        btn.addEventListener('click', function() {
             const currentDir = html.getAttribute('dir');
             const isCurrentlyRTL = currentDir === 'rtl';
-            
+            // Close mobile menu if open
+            const navMenu = document.querySelector('.nav-menu');
+            if (navMenu && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+            }
             if (isCurrentlyRTL) {
                 html.removeAttribute('dir');
                 localStorage.setItem('rtl-mode', 'false');
-                updateToggleButton(false);
+                rtlToggles.forEach(b => updateToggleButton(b, false));
             } else {
                 html.setAttribute('dir', 'rtl');
                 localStorage.setItem('rtl-mode', 'true');
-                updateToggleButton(true);
+                rtlToggles.forEach(b => updateToggleButton(b, true));
             }
         });
-    }
+    });
     
-    function updateToggleButton(isRTL) {
-        if (rtlToggle) {
-            const icon = rtlToggle.querySelector('i');
-            const text = rtlToggle.childNodes[rtlToggle.childNodes.length - 1];
-            
+    function updateToggleButton(btn, isRTL) {
+        if (btn) {
+            const icon = btn.querySelector('i');
             if (isRTL) {
                 icon.className = 'fas fa-globe-americas';
-                text.textContent = ' LTR';
-                rtlToggle.title = 'Switch to Left-to-Right';
+                btn.title = 'Switch to Left-to-Right';
             } else {
                 icon.className = 'fas fa-globe';
-                text.textContent = ' RTL';
-                rtlToggle.title = 'Switch to Right-to-Left';
+                btn.title = 'Switch to Right-to-Left';
             }
         }
     }
@@ -84,17 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 gap: 1rem;
             }
             
-            [dir="rtl"] .footer-logo {
-                flex-direction: row-reverse;
-            }
-            
             [dir="rtl"] .contact-info p {
-                flex-direction: row-reverse;
                 text-align: right;
-            }
-            
-            [dir="rtl"] .social-links {
-                justify-content: flex-end;
             }
             
             [dir="rtl"] .form-row {

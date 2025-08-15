@@ -10,24 +10,25 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
+            <a class="nav-logo" href="index.html">
                 <i class="fas fa-heart"></i>
                 <span>Hope Foundation</span>
-            </div>
+            </a>
             
             <ul class="nav-menu">
-                <li class="nav-item dropdown">
+                <!-- Desktop Dropdowns -->
+                <li class="nav-item dropdown desktop-only">
                     <a href="#" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="index.html">Home Style 1</a>
-                        <a href="index2.html">Home Style 2</a>
+                        <a href="index.html">Home 1</a>
+                        <a href="index2.html">Home 2</a>
                     </div>
                 </li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="campaigns.html" class="nav-link">Campaigns</a></li>
-                <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
-                <li class="nav-item dropdown">
+                <li class="nav-item desktop-only"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item desktop-only"><a href="campaigns.html" class="nav-link">Campaigns</a></li>
+                <li class="nav-item desktop-only"><a href="donate.html" class="nav-link">Donate</a></li>
+                <li class="nav-item desktop-only"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item dropdown desktop-only">
                     <a href="#" class="nav-link">Dashboard <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
                         <a href="admin-dashboard.html">Admin Dashboard</a>
@@ -35,9 +36,24 @@
                         <a href="login.html">Login</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <button id="rtl-toggle" class="rtl-toggle">
-                        <i class="fas fa-globe"></i> RTL
+                <li class="nav-item desktop-only">
+                    <button class="rtl-toggle">
+                        <i class="fas fa-globe"></i>
+                    </button>
+                </li>
+                <!-- Mobile Flat Links -->
+                <li class="nav-item mobile-only"><a href="index.html" class="nav-link">Home 1</a></li>
+                <li class="nav-item mobile-only"><a href="index2.html" class="nav-link">Home 2</a></li>
+                <li class="nav-item mobile-only"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item mobile-only"><a href="campaigns.html" class="nav-link">Campaigns</a></li>
+                <li class="nav-item mobile-only"><a href="donate.html" class="nav-link">Donate</a></li>
+                <li class="nav-item mobile-only"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item mobile-only"><a href="admin-dashboard.html" class="nav-link">Admin Dashboard</a></li>
+                <li class="nav-item mobile-only"><a href="user-dashboard.html" class="nav-link">User Dashboard</a></li>
+                <li class="nav-item mobile-only"><a href="login.html" class="nav-link">Login</a></li>
+                <li class="nav-item mobile-only">
+                    <button class="rtl-toggle">
+                        <i class="fas fa-globe"></i>
                     </button>
                 </li>
             </ul>
